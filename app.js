@@ -39,9 +39,9 @@ app.use("/api", orderRoutes);
 app.use("/api", paymentRoutes);
 
 //PORT
-const port = 2004 || process.env.PORT;
+const PORT = 2004 || process.env.PORT;
 
 //Starting Server
-app.listen(port, () => {
-  console.log(`App is running at ${port}`);
+app.listen(PORT, () => {
+  console.log(`App is running at ${PORT}`);
 });
