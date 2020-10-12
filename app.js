@@ -39,7 +39,7 @@ app.use("/api", orderRoutes);
 app.use("/api", paymentRoutes);
 
 //PORT
-const PORT = 2004 || process.env.PORT;
+const PORT = process.env.PORT || 2004;
 
 //Starting Server
 app.listen(PORT, () => {
