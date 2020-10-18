@@ -63,7 +63,7 @@ exports.updateOrderStatus = (req, res) => {
           error: "Cannot update order status.",
         });
       }
-      res.json(order);
+      res.json({ message: "Order status updated." });
     }
   );
 };
